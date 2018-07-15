@@ -3,29 +3,96 @@
 <!-- Navigation -->
 <mat-toolbar color="primary">
   <mat-toolbar-row>
-    <span>Amgular 5, Material</span>
-
+    <span>Local Weather</span>
     <span class="example-spacer"></span>
-    
-    <button mat-button>About</button>
-    <button mat-button>Services</button>
-    <button mat-button>Contact</button>
+    <button mat-button><button mat-icon-button [matMenuTriggerFor]="menu">
+        <mat-icon>more_vert</mat-icon>
+      </button></button>
   </mat-toolbar-row>
 </mat-toolbar>
 <!-- //Navigation -->
 
-<mat-card>
-  <mat-form-field>
-    <input matInput [(ngModel)]="answer" placeholder="Who has the best dev tutorials?">
-  </mat-form-field>
+ <!-- Vertical Menu -->
+  <mat-menu #menu="matMenu">
+      <button mat-menu-item disabled>
+          <mat-icon>textsms</mat-icon>
+          <span>Text is Disabled</span>
+        </button>
+    <button mat-menu-item>
+      <mat-icon>person_pin</mat-icon>
+      <span>About MrBorges</span>
+    </button>
+  </mat-menu>
+  <!--// Vertical Menu -->
 
-  <br>
-  
-  <button mat-raised-button (click)="showAnswer()">Answer me</button>
-  <mat-spinner [style.display]="showSpinner ? 'block' : 'none'"></mat-spinner>
-</mat-card>
 
 
-<mat-card *ngIf="answerDisplay">
-  <h1>{{ answerDisplay }}, you're damn right.</h1>
-</mat-card>
+<!-- GRID TILE -->
+GRID TILE
+<mat-grid-list cols="3" rowHeight="100px">
+    <mat-grid-tile
+        *ngFor="let tile of tiles"
+        [colspan]="tile.cols"
+        [rowspan]="tile.rows"
+        [style.background]="tile.color">
+      {{tile.text}}
+    </mat-grid-tile>
+  </mat-grid-list>
+<!--// GRID TILE -->
+
+
+
+<!-- Local Weather -->
+<div class="grid-container">
+    <div class="header">
+        <h4>Local Weather App - <small>Free Code Camp</small></h4>
+    </div>
+    <div class="left hide-on-mobile">
+    </div>
+    <div class="middle" style="background-color:#bbb;">
+        <div id="deck">
+            <div class="card">
+                <div class="image">
+                    <img id="image2" src="" alt="Weather icon">
+
+                    <div id="image">{{image}}</div>
+                </div>
+                <div class="info">
+                    <p>
+                        <span id="city">{{city}}</span><br>
+                        <small>
+                            <span id="country" class="small-style">{{country}}</span><br><br>
+                            <span id="date" class="small-style">{{date}}</span>
+                          </small>
+                    </p>
+                    <div id="main">
+                        {{main}}
+                    </div>
+                    <div id="description">
+                        {{description}}
+                    </div>
+                    <div>
+                        <img id="icon" class="floating-box" src="" alt="#ICON">
+                        <span id="temp" class="floating-box">{{temp}}</span>
+                        <span id="temp2" class="floating-box" style="display:none;">{{temp2}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  
+    <div class="right hide-on-mobile3">
+        Settings<hr>
+        <!-- <button type="submit" id="status" class="button" value="True"><span>{{status}}</span></button><br><br>
+        <div id="status" class="button-row">
+            <button mat-stroked-button color="primary">{{status}}</button>
+          </div> -->
+      </div>
+      <br>
+    <div class="footer">         
+        <button type="submit" id="btn-footer" class="hide-on-desktop3 button" value="True"><span>{{btnFooter}}</span></button><br><br>
+      </div>
+</div>
+
+<!-- local weather -->
+
+
