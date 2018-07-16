@@ -1,4 +1,9 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
+
+export interface DialogData {
+  animal: string;
+  name: string;
+}
 
 export interface Tile {
   color: string;
@@ -55,7 +60,6 @@ export class AppComponent {
     toggleButton(){
       document.getElementById("temp").innerHTML = "oooi"
     }
-
 }// End @Component
 
 

@@ -15,3 +15,12 @@ body {
     font-size: 8pt;
     float: right;
   } 
+  .mat-toolbar-row span {
+    white-space: nowrap;
+    text-align: center;
+    line-height: 36px;
+    font-family: Roboto,"Helvetica Neue",sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    padding-left: 10px;
+  }
