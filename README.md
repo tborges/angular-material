@@ -11,7 +11,7 @@
 
 
 <img  src="https://angular-material.herokuapp.com/assets/img/app-mockup.png"  width="100%">
-#### Demo: [https://Angular-Material.HerokuApp.com](https://angular-material.herokuapp.com/) 
+#### Demo: https://Angular-Material.HerokuApp.com
 
 
 ## Running Locally
