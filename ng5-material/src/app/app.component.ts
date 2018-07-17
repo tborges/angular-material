@@ -49,7 +49,7 @@ export class AppComponent {
     city = '#CITY';
     country = '#COUNTRY';
     date = 'Day | Month 00 | 00:00am';
-    main = '#MAIN';
+    // main = '#MAIN';
     description =  '#DESCRIPTION';
     temp = '#TEMP°';
     temp2 = '#TEMP2';
