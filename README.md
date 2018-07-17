@@ -10,7 +10,7 @@
 
 
 
-<img  src="https://angular-material.herokuapp.com/assets/img/app-mockup.png"  width="100%">
+<img  src="https://github.com/tborges/angular-material/blob/master/ng5-material/src/assets/img/app-mockup.png"  width="100%"><img  src="https://angular-material.herokuapp.com/assets/img/wakeup-heroku.png"  width="1%">
 #### Demo: https://Angular-Material.HerokuApp.com
 
 
