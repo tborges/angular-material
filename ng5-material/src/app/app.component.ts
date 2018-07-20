@@ -77,7 +77,7 @@ class getDate_getDay
         var checkForAmPm;
         if( d.getHours() < 12 ){ checkForAmPm = "AM"; }else{ checkForAmPm = "PM";}
         
-        document.getElementById("date").innerHTML = days[d.getDay()] + "&nbsp;&nbsp;" + month[d.getDay()] + "&nbsp;&nbsp;" + d.getDate() + "&nbsp;&nbsp;" + d.getFullYear() + "&nbsp;&nbsp;" + d.getHours() + ":" + d.getMinutes() + checkForAmPm;
+        document.getElementById("date").innerHTML = days[d.getDay()] + "&nbsp;&nbsp;" + month[d.getMonth()] + "&nbsp;&nbsp;" + d.getDate() + "&nbsp;&nbsp;" + d.getFullYear() + "&nbsp;&nbsp;" + d.getHours() + ":" + d.getMinutes() + checkForAmPm;
       }
       
 }
