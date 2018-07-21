@@ -5,7 +5,7 @@
   <title>Angular 5  Material</title>
   <base href="/">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- <link rel="icon" type="image/x-icon" href="favicon.ico"> -->
           <!-- Favicon & App icons -->
           <link rel="apple-touch-icon" sizes="57x57" href="assets/img/apple-icon-57x57.png">
@@ -35,6 +35,8 @@
   gtag('config', 'UA-30145059-30');
 </script>
   
+
+
  <!-- MATERIAL ICONS -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
  <!-- Original  -->
@@ -89,10 +91,9 @@
   <app-root></app-root>
 
 
-<!-- DECK -->
  <script>
-
-
+// aware of global scope problems, fixed it with a closure.
+(() => {
 
 /*
  * HTML5 geolocation() is for location only
@@ -202,10 +203,9 @@ function showPosition(position) {
     document.getElementById('image2').src = imageURL2;
     });
 };
-
+})();// end closure
 
 </script>
-<!--// DECK -->
 
 <!-- Google Adsense -->
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
