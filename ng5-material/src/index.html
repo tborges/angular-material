@@ -21,7 +21,6 @@
           <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
           <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon-96x96.png">
           <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
-          <link rel="manifest" href="assets/img/manifest.json">
           <meta name="msapplication-TileColor" content="#ffffff">
           <meta name="msapplication-TileImage" content="assets/img/ms-icon-144x144.png">
           <meta name="theme-color" content="#ffffff">
@@ -35,7 +34,9 @@
   gtag('config', 'UA-30145059-30');
 </script>
   
-
+ <!-- About this application -->
+ <link rel="manifest" href="assets/img/manifest.json">
+  <meta name="theme-color" content="#424242"/>
 
  <!-- MATERIAL ICONS -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -54,7 +55,10 @@
             .floating-box {float: right;width: 50px;height: 50px;margin: 0px;margin-right:75px;}
             #icon{-webkit-filter: drop-shadow(10px 10px 10px #424242 );filter: drop-shadow(10px 10px 10px #424242);position:relative;-webkit-animation: backandforth 25s ease 0s;-webkit-animation-iteration-count:infinite;animation: backandforth 25s ease 0s;animation-iteration-count:infinite;}
 
-            #deck{display:flex;flex-direction: column; position: absolute;margin: auto;top: 0;right: 0;bottom: 0;left: 0;max-width: 324px;max-height: 458px;border-radius: 25px;color:#424242;-webkit-box-shadow: 6px 7px 5px -2px rgba(66,66,66,0.27);-moz-box-shadow: 6px 7px 5px -2px rgba(66,66,66,0.27);box-shadow: 6px 7px 5px -2px rgba(66,66,66,0.27);padding:2px;background-color:white;}
+#grid-container{display: flex;
+  flex-wrap: nowrap;
+  /* background-color: DodgerBlue; */}
+            #deck{position: absolute;margin: auto;top: 0;right: 0;bottom: 0;left: 0;max-width: 324px;max-height: 458px;border-radius: 25px;color:#424242;-webkit-box-shadow: 6px 7px 5px -2px rgba(66,66,66,0.27);-moz-box-shadow: 6px 7px 5px -2px rgba(66,66,66,0.27);box-shadow: 6px 7px 5px -2px rgba(66,66,66,0.27);padding:2px;background-color:white;}
             #image{font-size: 50px;height:230px;z-index: -1;filter: blur(0px);margin:-2px 0px -3px -2px;width: 325px;border-radius: 25px 25px 0 0;background-color: lightblue;}
             #image2{width:150px;height: 150px;left:27%; margin-top: 40px;position:absolute;z-index: 1;}
             .info{padding-top: 0px;}
@@ -94,6 +98,29 @@
  <script>
 // aware of global scope problems, fixed it with a closure.
 (() => {
+
+/*
+    // ADD TO HOME SCREEN BEHAVIOR CHANGES - Chrome 68
+    let installPromptEvent;
+
+window.addEventListener('beforeinstallprompt', (event) => {
+  // Prevent Chrome <= 67 from automatically showing the prompt
+  event.preventDefault();
+  // Stash the event so it can be triggered later.
+  installPromptEvent = event;
+  // Update the install UI to notify the user app can be installed
+  document.querySelector('#install-button').disabled = false;
+});
+
+    btnInstall.addEventListener('click', ()=>{
+        // Update the install UI to remove the install button
+        document.querySelector('#install-button').disabled = true;
+        // Show the modal add to home screen dialog
+        installPromptEvent.prompt();
+        // Wait for the user to respond to the prompt
+        installPromptEvent.userChoice.then(handleInstall);
+    });
+*/
 
 /*
  * HTML5 geolocation() is for location only
