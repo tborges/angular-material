@@ -60,8 +60,12 @@ export class AppComponent {
     toggleButton(){
       document.getElementById("temp").innerHTML = "oooi"
     }
-}// End @Component
+}// End AppComponent
 
+
+export class Mingau{
+  title = 'Mingau com acucar';
+}
 
 
 /*
