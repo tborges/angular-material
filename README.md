@@ -26,9 +26,25 @@ $ ng serve
 ```
 
 
-## 
+## Deployment
+
+Use `$ ng build --prod` if your application is ready for production. It will reduce the size and increase **speed** of your application on the web. <br><br>
+`$ ng build` **VS.** `$ ng build --prod` <br>
+My small application went from 23mb to 2mb.  
+<br><br>
+Loading time on 3G network: 8 seconds **FAIR**, 28% visitor loss due to loading time<br>
+**VS.**<br>
+Loading time on 3G network: 4 seconds **GOOD**, 10% visitor loss due to loading time
+<br><br>
+[![enter image description here][1]][1]
 
 
+**VS.**
+[![enter image description here][2]][2]
+
+
+  [1]: https://i.stack.imgur.com/J5YfX.jpg
+  [2]: https://i.stack.imgur.com/Qie3K.jpg
 
 Feel free to fork, modify and have fun with it. If you hit bugs, fill issues on github [here](https://github.com/tborges/angular-material/issues). <img  src="http://www.smashingbuzz.com/wp-content/uploads/2011/12/Ant-moving-around.gif"  width="9%"><br>
 This sample app is under <a href='https://github.com/tborges/Node-Express-EJS-Template-Body-Parser/blob/master/LICENSE'>MIT license</a>.
