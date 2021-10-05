@@ -4,7 +4,7 @@
 
  - Angular 5 [<img  src="https://hsto.org/webt/eb/ly/pp/eblypp6fge8ppfcellukk_kimf0.png" width="4%">](https://angular.io/)
  - Angular Material [<img  src="https://hsto.org/webt/eb/ly/pp/eblypp6fge8ppfcellukk_kimf0.png" width="4%">](https://material.angular.io/)
- - Node.js [<img  src="https://cdn2.iconfinder.com/data/icons/nodejs-1/256/nodejs-256.png" width="4%">](https://nodejs.org/en/) 
+ - Node.js [<img  src="https://cdn.freebiesupply.com/logos/large/2x/nodejs-1-logo-png-transparent.png" width="4%">](https://nodejs.org/en/) 
  - Express [<img  src="https://raygun.com/images/language-template/tiles/languages/javascript.svg" width="3%">](http://expressjs.com/)
  - npm [<img src="https://sitecore.myget.org/Content/images/packageDefaultIcon_npm.png" width="4%">](https://www.npmjs.com/)
 
